@@ -1,0 +1,7 @@
+Abra o projeto no netbeans, pule os erros e insira a biblioteca do sqlite-jdbc-3.21.0 que está presente abaixo desse
+documento de texo.
+
+Criado por 
+	Lucas Gabriel		@gabrielsyphan
+	Vinicius Tenório	@vinicius_tcavalcante
+	Haniel Lemos		@ha_2_el
