@@ -75,7 +75,7 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
             }
         });
 
-        EscolhaAtributo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Placa", "Marca", "Modelo", "Cor" }));
+        EscolhaAtributo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Todos", "Placa", "Marca", "Modelo", "Cor" }));
         EscolhaAtributo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 EscolhaAtributoActionPerformed(evt);
