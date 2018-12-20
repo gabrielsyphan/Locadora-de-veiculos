@@ -20,7 +20,7 @@ public class TelaCadastroClienteSDI extends javax.swing.JFrame {
     
     public TelaCadastroClienteSDI() {
         initComponents();
-        this.setTitle("SMES - StoffMalocoking Enterprise System");
+        this.setTitle("3ML Corporation System");
         setIcon();
     }
 

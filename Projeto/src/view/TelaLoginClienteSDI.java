@@ -21,7 +21,7 @@ public class TelaLoginClienteSDI extends javax.swing.JFrame {
     
     public TelaLoginClienteSDI() {
         initComponents();
-        this.setTitle("SMES - StoffMalocoking Enterprise System");
+        this.setTitle("3ML Corporation System");
         setIcon();
     }
 

@@ -20,7 +20,7 @@ public class TelaCadastroVeiculoSDI extends javax.swing.JFrame {
     
     public TelaCadastroVeiculoSDI() {
         initComponents();
-        this.setTitle("SMES - StoffMalocoking Enterprise System");
+        this.setTitle("3ML Corporation System");
         setIcon();
     }
 

@@ -27,7 +27,7 @@ public class TelaAdmSDI extends javax.swing.JFrame {
             
     public TelaAdmSDI() {
         initComponents();
-        this.setTitle("SMES - StoffMalocoking Enterprise System");
+        this.setTitle("3ML Corporation System");
         setIcon();
     }
 
@@ -47,6 +47,7 @@ public class TelaAdmSDI extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         Botao_Buscar = new javax.swing.JButton();
         EscolhaAtributo = new javax.swing.JComboBox<>();
+        filtrarTodos2 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         Retornar = new javax.swing.JMenuItem();
@@ -83,7 +84,7 @@ public class TelaAdmSDI extends javax.swing.JFrame {
 
         jLabel4.setText("ADM");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Sem Título-1.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/3ml.png"))); // NOI18N
 
         TextoValor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,6 +106,13 @@ public class TelaAdmSDI extends javax.swing.JFrame {
         EscolhaAtributo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 EscolhaAtributoActionPerformed(evt);
+            }
+        });
+
+        filtrarTodos2.setText("Filtrar todos");
+        filtrarTodos2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                filtrarTodos2ActionPerformed(evt);
             }
         });
 
@@ -244,45 +252,47 @@ public class TelaAdmSDI extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel4)
-                .addContainerGap(407, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(19, 19, 19)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addComponent(TextoValor, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(EscolhaAtributo, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(16, 16, 16)
-                            .addComponent(jLabel1))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(277, 277, 277)
-                            .addComponent(Botao_Buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING))
-                    .addContainerGap(20, Short.MAX_VALUE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel4))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(28, 28, 28)
+                                        .addComponent(filtrarTodos2, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(Botao_Buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(TextoValor, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(EscolhaAtributo, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(87, 87, 87)
+                        .addComponent(jLabel2)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel4)
-                .addContainerGap(301, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(79, 79, 79)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(18, 18, 18)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(18, 18, 18)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(EscolhaAtributo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(TextoValor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(35, 35, 35)
-                    .addComponent(Botao_Buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(44, Short.MAX_VALUE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(EscolhaAtributo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TextoValor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(filtrarTodos2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Botao_Buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(53, 53, 53))
         );
 
         pack();
@@ -301,25 +311,6 @@ public class TelaAdmSDI extends javax.swing.JFrame {
     private void inforActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inforActionPerformed
         new TelaSobreSDI().setVisible(true);
     }//GEN-LAST:event_inforActionPerformed
-
-    private void TextoValorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextoValorActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TextoValorActionPerformed
-
-    private void Botao_BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Botao_BuscarActionPerformed
-        String atributo = String.valueOf(EscolhaAtributo.getSelectedItem());
-        String valor = TextoValor.getText();
-        ArrayList lista_de_Veiculos = f.buscarVeiculosObject(atributo, valor);
-        if(lista_de_Veiculos.isEmpty()==true){
-            JOptionPane.showMessageDialog(null, "Não há veículos com essa caracterítica!");
-        }else{
-        new TelaPesquisaSDI(lista_de_Veiculos).setVisible(true);
-        }
-    }//GEN-LAST:event_Botao_BuscarActionPerformed
-
-    private void EscolhaAtributoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EscolhaAtributoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_EscolhaAtributoActionPerformed
 
     private void DevolverVeiculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DevolverVeiculoActionPerformed
         new TelaDevolverVeiculoSDI().setVisible(true);
@@ -356,6 +347,29 @@ public class TelaAdmSDI extends javax.swing.JFrame {
     private void ExcluirAdmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExcluirAdmActionPerformed
         new TelaDeletarAdmSDI().setVisible(true);
     }//GEN-LAST:event_ExcluirAdmActionPerformed
+
+    private void filtrarTodos2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filtrarTodos2ActionPerformed
+        new TelaPesquisaSDI(f.getTodosVeiculos()).setVisible(true);
+    }//GEN-LAST:event_filtrarTodos2ActionPerformed
+
+    private void EscolhaAtributoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EscolhaAtributoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_EscolhaAtributoActionPerformed
+
+    private void Botao_BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Botao_BuscarActionPerformed
+        String atributo = String.valueOf(EscolhaAtributo.getSelectedItem());
+        String valor = TextoValor.getText();
+        ArrayList lista_de_Veiculos = f.buscarVeiculosObject(atributo, valor);
+        if(lista_de_Veiculos.isEmpty()==true){
+            JOptionPane.showMessageDialog(null, "Não há veículos com essa caracterítica!");
+        }else{
+            new TelaPesquisaSDI(lista_de_Veiculos).setVisible(true);
+        }
+    }//GEN-LAST:event_Botao_BuscarActionPerformed
+
+    private void TextoValorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextoValorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextoValorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -406,6 +420,7 @@ public class TelaAdmSDI extends javax.swing.JFrame {
     private javax.swing.JMenuItem ExcluirAdm;
     private javax.swing.JMenuItem Retornar;
     private javax.swing.JTextField TextoValor;
+    private javax.swing.JButton filtrarTodos2;
     private javax.swing.JMenuItem infor;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JLabel jLabel1;

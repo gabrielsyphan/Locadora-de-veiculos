@@ -28,13 +28,13 @@ public class TelaDevolverVeiculoSDI extends javax.swing.JFrame {
     
     public TelaDevolverVeiculoSDI() {
         initComponents();
-        this.setTitle("SMES - StoffMalocoking Enterprise System");
+        this.setTitle("3ML Corporation System");
         setIcon();
     }
     public TelaDevolverVeiculoSDI(String cpf) {
         this.cpf_cliente=cpf;
         initComponents();
-        this.setTitle("SMES - StoffMalocoking Enterprise System");
+        this.setTitle("3ML Corporation System");
         setIcon();
     }
 

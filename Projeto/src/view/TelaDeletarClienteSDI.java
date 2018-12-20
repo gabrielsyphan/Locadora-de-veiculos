@@ -19,7 +19,7 @@ public class TelaDeletarClienteSDI extends javax.swing.JFrame {
     
     public TelaDeletarClienteSDI() {
         initComponents();
-        this.setTitle("SMES - StoffMalocoking Enterprise System");
+        this.setTitle("3ML Corporation System");
         setIcon();
     }
     

@@ -20,7 +20,7 @@ public class TelaEditarAdmSDI extends javax.swing.JFrame {
     
     public TelaEditarAdmSDI() {
         initComponents();
-        this.setTitle("SMES - StoffMalocoking Enterprise System");
+        this.setTitle("3ML Corporation System");
         setIcon();
     }
 

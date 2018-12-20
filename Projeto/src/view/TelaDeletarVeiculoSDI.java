@@ -19,7 +19,7 @@ public class TelaDeletarVeiculoSDI extends javax.swing.JFrame {
     
     public TelaDeletarVeiculoSDI() {
         initComponents();
-        this.setTitle("SMES - StoffMalocoking Enterprise System");
+        this.setTitle("3ML Corporation System");
         setIcon();
     }
 

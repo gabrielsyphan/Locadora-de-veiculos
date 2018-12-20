@@ -557,7 +557,45 @@ public class FuncoesBanco {
         return c;
     }
     
-   
+   public ArrayList getTodosVeiculos(){
+        this.conexaoSQLite.conectar();
+        ArrayList listaVeiculos = new ArrayList();
+        ResultSet resultSet = null;
+        PreparedStatement preparedStatement = null;
+        
+        String sql = "SELECT * FROM tbl_veiculo;";
+        
+        try{
+            
+            preparedStatement = conexaoSQLite.criarPreparedStatement(sql);
+            
+            resultSet = preparedStatement.executeQuery();
+            
+            while(resultSet.next()){
+                System.out.println("Placa = "+resultSet.getString("placa"));
+                System.out.println("Cor = "+resultSet.getString("cor"));
+                System.out.println("Marca = "+resultSet.getString("marca"));
+                System.out.println("Modelo = "+resultSet.getString("modelo"));
+                System.out.println("Disponibilidade = "+resultSet.getString("disponibilidade"));
+                System.out.println("--------------------------------");
+                listaVeiculos.add(new Object[]{resultSet.getString("placa"),resultSet.getString("cor"), resultSet.getString("marca"), resultSet.getString("modelo"), resultSet.getFloat("kilometragem"), resultSet.getString("disponibilidade") });
+                
+            }
+            
+        }catch(SQLException e){
+            e.printStackTrace();
+        }finally{
+            try{
+                resultSet.close();
+                preparedStatement.close();
+                this.conexaoSQLite.desconectar();
+                
+            }catch(SQLException ex){
+                ex.printStackTrace();
+            }
+        }
+        return listaVeiculos;
+    }
    
     public ArrayList<Veiculo> buscarVeiculos(String atributo, String valor){
     

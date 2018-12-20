@@ -24,7 +24,7 @@ public class TelaPesquisaSDI extends javax.swing.JFrame {
      */
    public TelaPesquisaSDI() {
         initComponents();
-        this.setTitle("SMES - StoffMalocoking Enterprise System");
+        this.setTitle("3ML Corporation System");
         setIcon();
         
     }

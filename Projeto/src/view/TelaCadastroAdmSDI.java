@@ -28,7 +28,7 @@ public class TelaCadastroAdmSDI extends javax.swing.JFrame {
     
     public TelaCadastroAdmSDI() {
         initComponents();
-        this.setTitle("SMES - StoffMalocoking Enterprise System");
+        this.setTitle("3ML Corporation System");
         setIcon();
         getRootPane().setDefaultButton(Botao_Cadastrar);
     }
